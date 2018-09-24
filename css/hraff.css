@@ -1,0 +1,239 @@
+
+
+
+/* Defaults */
+
+body{
+    width: 100%;
+    padding: 50px;
+    height:auto; 
+    padding: 20px;
+    transform: none;
+      
+}
+
+
+
+.logo{
+    
+    padding: 10px;
+    
+}
+.page{
+    width: 100vw;
+    height:auto;
+}
+.sidebar{
+        
+    height: 100%;
+    background-color: #ac1111
+    
+}
+.main-content{
+    width: auto;
+    height:100%
+}
+.navbar{
+    padding: 20px;
+}
+.nav-link{
+    color:white;
+}
+.socialmedialinks{
+    margin-top: 20vh;
+    padding: 20px;
+}
+
+
+.carousel-inner img {
+      width: 100%;
+      height:100%;
+  }
+
+.carousel-caption{
+    text-align: left;
+    position:fixed;
+    left:1vw;
+    top:2vh;
+  
+
+}
+.latestEvent{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* Common branding */
+
+.viewAllEvents{
+    height: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 2em;
+    line-height: 10vh;
+    
+    
+  
+}
+
+
+.subscribe p {
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.carousel-caption h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    line-height: 120px;
+    
+}
+
+hr{
+    border: 0;
+    width: 5vmin;
+    background-color: red;
+    height: 10px;
+    position:relative;
+    margin-top: 0;
+    right: 7vmin;
+    
+    
+}
+.btn{
+    border-radius:0;
+   
+}
+
+subscribe-form{
+    align-content: center;
+   
+}
+.footer {
+  
+  
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #360101;
+}
+
+@media (min-width:1200px) {
+	/* Desktop layout */
+   .mobile{display:none;}
+
+}
+
+@media (min-width:501px) and (max-width:1199px) {
+	/* Tablet layout */
+    .mobile{display:none;}
+    
+}
+
+@media (max-width:500px) {
+  /* Mobile layout */
+    .desktop{display: none;}
+    
+    nav.mobile{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #ac1111;
+    width:70vw;
+    height:100%;
+    padding:60px 40px;
+    z-index:1;
+    transform: translateX(-70vw);
+    transition: 0.5s;
+}
+    nav.mobile a{
+    display:block;
+    padding:20px 0;
+    opacity: 0;
+    transition:0.5s;
+    color:white;
+    font-weight:bold;
+}
+     .menu-open .page{
+        transform: translateX(50px);
+        filter:brightness(20%);
+        pointer-events: none;
+    }
+    
+ 
+    #burger{
+        width:48px;
+        height: 48px;
+        padding:12px; 
+        position:fixed;
+        left:0px;
+        z-index: 2; 
+    }
+    #burger .line{
+        background-color: black;
+        height: 4px;
+        margin-bottom: 6px;
+        transition: 0.5s;
+    }
+    
+.menu-open #line1 {
+        transform: translateY(10px) rotate(45deg);
+ 
+}
+.menu-open #line2 {
+ 
+opacity: 0;
+}
+.menu-open #line3 {
+    transform: translateY(-10px) rotate(135deg);
+ 
+}
+     .menu-open{
+        height:100vh;
+        overflow: hidden;
+    }
+    .menu-open nav.mobile{
+        transform: translateX(0vw);
+    }
+    
+
+    
+     .menu-open nav.mobile a{
+        opacity: 1;
+    }
+    .page{padding: 20px}
+    .carousel-caption{
+        position: fixed;
+        left:10vw;
+    }
+    .carousel-caption h3{
+        font-size: 2em;
+        line-height: 20px;
+    }
+    .footer{
+        margin-top: 10px;
+    
+    
+    
+    }
+    .subscribe_button{
+        position:relative;
+        left: 10vw;
+        
+    }
+    .footer span{
+        font-size: 0.5em;
+    }
+    #mail{
+        position:relative;
+        left:15vw;
+    }
+    
+	
+    }
