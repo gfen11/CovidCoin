@@ -1,1 +1,1 @@
-https://gfen11.github.io/fit3157-assignment2/#
+https://gfen11.github.io/CovidCoin/
